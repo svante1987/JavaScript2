@@ -35,3 +35,7 @@ input[type="submit"]{
   border: none;
   border-radius: 2px;
 }
+
+.display{
+  text-align: center;
+}
