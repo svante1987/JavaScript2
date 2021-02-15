@@ -6,6 +6,7 @@ html
 {
     height: 100%;
     width: 100%;
+    margin:auto;
 }
 
 body {
@@ -26,53 +27,34 @@ body {
     right: 0;
 }
 
+/* hero img */
 
-.flex-img {
-    align-content: center;
-    padding: 10px;
-    flex: 30%;
-}
-
-
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/los_angeles_natt.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
 .container{
     width: 98%;
     margin: auto;
     overflow: hidden;
-}
-
-/* css till panorama bilden på en stad */
-
-#headerback{
-    background-image: url(/img/los_angeles_natt.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 300px;
-    margin-bottom: 2px;
-    text-align: center;
-    background-attachment: fixed;
-    position: relative;
-}
-
-header h1 {
-    color: #fff;
-    font-size: 45px;
-    text-shadow: 2px 2px black;
-    line-height: 1.6em;
-}
-
-header p {
-    color: #fff;
-    text-shadow: 2px 2px black;
-}
-.textbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media screen and (max-width: 767px){
-
 }
