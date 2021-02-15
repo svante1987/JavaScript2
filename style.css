@@ -6,3 +6,14 @@
 .logo{
     padding: 10px;
 }
+
+.flex-img {
+    align-content: center;
+    padding: 10px;
+    flex: 30%;
+}
+
+
+@media screen and (max-width: 767px){
+
+}
