@@ -5,6 +5,7 @@ var inputValue = document.querySelector('.name');
 var inputValue = document.querySelector('.desc');
 var inputValue = document.querySelector('.temp');
 
+button.addEventListener('click',function(){
 /* här är min fetch i länken så ber jag fetch hämta användar input (+input.value+) */
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=6f8be410a1a8662918de11d14f4f922e')
 /* här är min promises, eller responses */
@@ -12,3 +13,4 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=6
 .then(data => console.log(data))
 
 .catch(err => alert("Aj, aj den staden känner ingen till..."))
+})
