@@ -1,9 +1,10 @@
 /* använder querySelector för att ta saker ifrån DOM */
-var button = document.querySelector('.button');
-var button = document.querySelector('.inputValue');
-var inputValue = document.querySelector('.name');
-var inputValue = document.querySelector('.desc');
-var inputValue = document.querySelector('.temp');
+var input = document.querySelector('.input_text');
+var main = document.querySelector('#name');
+var temp = document.querySelector('.temp');
+var desc = document.querySelector('.desc');
+var clouds = document.querySelector('.clouds');
+var button= document.querySelector('.submit');
 
 /* klickar man på knappen körs fetch */
 button.addEventListener('click',function(){
