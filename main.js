@@ -34,4 +34,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=6
 /*REGION: Venues*/
 /*variabler*/
 
-fetch('https://api.foursquare.com/v2/venues/explore?near='+input.value+'&appid=ICQLB0Y105CEOG5MEUK0ESCCSFVVJVR5W3YZU01PWWNLN33Y')
+/*url med api key och api secret*/
+fetch('https://api.foursquare.com/v2/venues/search?ll='+input.value+
+'&client_id=ICQLB0Y105CEOG5MEUK0ESCCSFVVJVR5W3YZU01PWWNLN33Y&client_secret=WOPRSG1BSB0FWGZCRJCDZL2YRPKJTK53BH5TAZGZWNCS0MJS')
+
+
+
