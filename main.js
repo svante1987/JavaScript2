@@ -7,7 +7,7 @@ var clouds = document.querySelector('.clouds');
 var button= document.querySelector('.submit');
 
 /* klickar man på knappen körs fetch */
-button.addEventListener('click',function(){
+button.addEventListener('click',function(name){
 /* här är min fetch i länken så ber jag fetch hämta användar input (+input.value+) */
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=6f8be410a1a8662918de11d14f4f922e')
 /* här är min promises, eller responses */
@@ -18,9 +18,11 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=6
   var tempValue = data['main']['temp'];
   var descValue = data['weather'][0]['description'];
 /* inner HTML här för att javascript ska kunna visa informationen */
-  name.innerHTML = nameValue;
-  temp.innerHTML = tempValue;
-  desc.innerHTML = descValue;
+
+  main.innerHTML = nameValue;
+  temp.innerHTML = "Temp - "+tempValue;
+  desc.innerHTML = "Desc - "+descValue;
+  input.value="";
 })
 
 
