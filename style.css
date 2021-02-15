@@ -11,6 +11,9 @@ html
 body {
     width: 100%;
     height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    line-height: 1.6em;
     background: -webkit-linear-gradient(#ce471e, #f79f2d);
     background: -o-linear-gradient(#ce471e, #f79f2d);
     background: -moz-linear-gradient(#ce471e, #f79f2d);
@@ -22,9 +25,7 @@ body {
     bottom: 0;
     right: 0;
 }
-.logo{
-    padding: 10px;
-}
+
 
 .flex-img {
     align-content: center;
@@ -42,8 +43,8 @@ body {
 
 /* css till panorama bilden på en stad */
 
-#logo{
-    background-image: url(/img/los_angeles_natt.jpg); 
+#headerback{
+    background-image: url(/img/los_angeles_natt.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,6 +53,24 @@ body {
     text-align: center;
     background-attachment: fixed;
     position: relative;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 45px;
+    text-shadow: 2px 2px black;
+    line-height: 1.6em;
+}
+
+header p {
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+.textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 767px){
