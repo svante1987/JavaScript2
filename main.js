@@ -11,3 +11,4 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=6
 .then(response => response.json())
 .then(data => console.log(data))
 
+.catch(err => alert("Aj, aj den staden känner ingen till..."))
