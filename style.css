@@ -2,7 +2,26 @@
     margin: 0;
     padding: 0;
 }
+html
+{
+    height: 100%;
+    width: 100%;
+}
 
+body {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#ce471e, #f79f2d);
+    background: -o-linear-gradient(#ce471e, #f79f2d);
+    background: -moz-linear-gradient(#ce471e, #f79f2d);
+    background: linear-gradient(#ce471e, #f79f2d);
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
 .logo{
     padding: 10px;
 }
@@ -13,6 +32,27 @@
     flex: 30%;
 }
 
+
+
+.container{
+    width: 98%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* css till panorama bilden på en stad */
+
+#logo{
+    background-image: url(/img/los_angeles_natt.jpg); 
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    margin-bottom: 2px;
+    text-align: center;
+    background-attachment: fixed;
+    position: relative;
+}
 
 @media screen and (max-width: 767px){
 
