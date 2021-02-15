@@ -1,4 +1,5 @@
-/* använder querySelector för att ta saker ifrån DOM */
+/*region: VÄDER*/
+/*  mina variabler, använder querySelector för att ta saker ifrån DOM */
 var input = document.querySelector('.input_text');
 var main = document.querySelector('#name');
 var temp = document.querySelector('.temp');
@@ -28,3 +29,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=6
 
 .catch(err => alert("Aj, aj den staden känner ingen till..."))
 })
+/*end region*/
+
+/*REGION: Venues*/
+/*variabler*/
+
+fetch('https://api.foursquare.com/v2/venues/explore?near='+input.value+'&appid=ICQLB0Y105CEOG5MEUK0ESCCSFVVJVR5W3YZU01PWWNLN33Y')
