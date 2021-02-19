@@ -37,16 +37,37 @@ header{
   outline: 8px solid rgb(250, 155, 91);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: ;
+  grid-template-rows: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+  grid-auto-rows: 60px auto 100px;
   grid-gap: 10px;
-  /* hur man placerar saker i sina celler */
-  align-items:; /* vertikalt i cellerna*/
-  justify-items: ; /* horizontellt*/
-  place-items:; /* short hand här kan man göra båda ovanstående */
-  /* placera saker i den stora kontainern */
-  align-content:; /* vertikalt */
-  justify-items:; /* horizontellt */
-  place-content:; /* shorthand */
+  grid-template-areas: 
+  "header header header"
+  "main main sidebar"
+  "footer footer footer";
+  /* hur man placerar saker i sina celler 
+  align-items:;  vertikalt i cellerna
+  justify-items: ; horizontellt
+  place-items:;  short hand här kan man göra båda ovanstående 
+   placera saker i den stora kontainern 
+  align-content:;  vertikalt 
+  justify-items:;  horizontellt 
+  place-content:;  shorthand */
+}
+
+.header{
+  grid-area: header;
+}
+
+.header{
+  grid-area: main;
+}
+
+.header{
+  grid-area: sidebar;
+}
+
+.header{
+  grid-area: footer;
 }
 
 #container > div {
