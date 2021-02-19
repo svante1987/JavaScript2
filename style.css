@@ -10,6 +10,15 @@
     margin: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  background-color:#ffc2fbff
+}
+
 header{
   padding: 50px
 }
@@ -18,8 +27,8 @@ header{
   width:95vw;
   height:60vh;
   margin: 0 auto;
-  background-color:#4cd5faff;
-  outline: 8px solid #ae8e84ff;
+  background-color:#fdf8d8ff;
+  outline: 8px solid #4cd5faff;
   display: grid;
   grid-template-columns: 50% 25% 25%;
   grid-template-rows: auto;
