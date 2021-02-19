@@ -39,6 +39,14 @@ header{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: ;
   grid-gap: 10px;
+  /* hur man placerar saker i sina celler */
+  align-items:; /* vertikalt i cellerna*/
+  justify-items: ; /* horizontellt*/
+  place-items:; /* short hand här kan man göra båda ovanstående */
+  /* placera saker i den stora kontainern */
+  align-content:; /* vertikalt */
+  justify-items:; /* horizontellt */
+  place-content:; /* shorthand */
 }
 
 #container > div {
