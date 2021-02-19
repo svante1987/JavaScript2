@@ -16,7 +16,7 @@ html {
 
 body{
   height: 100%;
-  background-image: linear-gradient(rgb(209, 129, 204),#ffc2fbff);
+  background-image: url("img/los_angeles_natt.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -33,7 +33,7 @@ header{
   height:60vh;
   margin: 0 auto;
   background-color:#fdf8d8ff;
-  outline: 8px solid #4cd5faff;
+  outline: 8px solid rgb(252, 149, 149);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: ;
