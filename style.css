@@ -15,7 +15,7 @@
 :root{
   --purple: #ffc2fbff;
   --blue: #4cd5faff;
-  --orange: #ff5c5cff;
+  --orange: rgb(248, 129, 129);
   --yellow: #fdf8d8ff;
   --brown: #ae8e84ff;
 }
@@ -53,22 +53,22 @@ body{
 
 #page > header {
   grid-area: head;
-  background-color: #8ca0ff;
+  background-color: var(--orange);
 }
 
 #page > nav {
   grid-area: nav;
-  background-color: #ffa08c;
+  background-color: var(--orange);
 }
 
 #page > main {
   grid-area: main;
-  background-color: #ffff64;
+  background-color: var(--orange);
 }
 
 #page > footer {
   grid-area: foot;
-  background-color: #8cffa0;
+  background-color: var(--orange);
 }
 /*
 #container{
