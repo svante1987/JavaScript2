@@ -7,8 +7,20 @@
 */
 *{
   padding: 0;
-    margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
 }
+
+:root{
+  --purple: #ffc2fbff;
+  --blue: #4cd5faff;
+  --orange: #ff5c5cff;
+  --yellow: #fdf8d8ff;
+  --brown: #ae8e84ff;
+}
+
+
 
 html {
   height: 100%;
@@ -24,11 +36,58 @@ body{
   background-size:cover;
 }
 
-header{
-  padding: 50px
+
+#container{
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 
+    [col-start] 1fr
+    [col-2] 1fr
+    [col-3] 1fr
+    [col-end];
+  grid-gap: 1rem;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas: 
+  "h h h"
+  "m m s"
+  "f f f";
 }
 
-#container {
+/* Items */
+#container > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222222;
+  text-align: center;
+  box-shadow: 1px 2px 3px gray;
+  border-radius: 8px;
+  color: #222;
+  font-size: 2em;
+  font-family: arial, sans-serif;
+  background-color: #f9d423;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header {
+  grid-area: ;
+}
+.main {
+  grid-area: ;
+}
+.sidebar {
+  grid-area: ;
+}
+.footer {
+  grid-area: ;
+}
+
+/*
+  #container {
   padding: 10px;
   width:95vw;
   height:60vh;
@@ -44,35 +103,26 @@ header{
   "header header header"
   "main main sidebar"
   "footer footer footer";
-  /* hur man placerar saker i sina celler 
+  grid-template:
+  "header header header"
+  "main main sidebar"
+  "main main siderbar"
+  "footer footer footer";
+  hur man placerar saker i sina celler 
   align-items:;  vertikalt i cellerna
   justify-items: ; horizontellt
   place-items:;  short hand här kan man göra båda ovanstående 
    placera saker i den stora kontainern 
   align-content:;  vertikalt 
   justify-items:;  horizontellt 
-  place-content:;  shorthand */
+  place-content:;  shorthand
 }
-
-.header{
-  grid-area: header;
-}
-
-.header{
-  grid-area: main;
-}
-
-.header{
-  grid-area: sidebar;
-}
-
-.header{
-  grid-area: footer;
-}
-
+*/
+/*
 #container > div {
   background-color: #ae8e84ff;
   text-align: center;
   padding: 10px;
   font-size: 30px;
 }
+*/
