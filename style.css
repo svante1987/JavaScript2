@@ -40,14 +40,16 @@ body{
   width: 100%;
   height: 100%;
   grid-gap: 1rem;
-  grid-template-areas: "head head head"
-                       "nav  main main"
-                       "foot  foot foot";
-  grid-template-rows: 60px auto 100px;
+  grid-template-areas: "head head head head"
+                       "weather weather weather weather"
+                       "venues venues venues venues"
+                       "foot  foot foot foot";
+  grid-template-rows: 60px 250px auto 100px;
   grid-template-columns: 
   [col-start] 1fr
   [col-2] 1fr
   [col-3] 1fr
+  [col-4] 1fr
   [col-end];
 }
 
@@ -56,13 +58,13 @@ body{
   background-color: var(--orange);
 }
 
-#page > nav {
-  grid-area: nav;
+#page > div#weather {
+  grid-area: weather;
   background-color: var(--orange);
 }
 
-#page > main {
-  grid-area: main;
+#page > div#venues  {
+  grid-area: venues;
   background-color: var(--orange);
 }
 
