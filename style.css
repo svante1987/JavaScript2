@@ -33,7 +33,7 @@ body{
   background-attachment: fixed;
   background-size:cover;
 }
-
+/*grid*/
 #page {
   display: grid;
   padding: 1rem;
@@ -72,6 +72,30 @@ body{
   grid-area: foot;
   background-color: var(--orange);
 }
+/* boxar */
+.weatherBox{
+  display: flex;
+  flex-flow: column;
+  border:  1px solid black;
+  border-radius: 1rem;
+  padding: 6.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 #container{
   padding: 1rem;
