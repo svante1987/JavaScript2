@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const OPEN_WEATHER_API_KEY = process.env.OPEN_WEATHER_API_KEY
+const { application } = require('express')
 const express = require ('express')
 const app = express()
 
