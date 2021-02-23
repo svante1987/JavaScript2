@@ -1,11 +1,37 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANDRA FÖRSÖKET*/
+
 /* färgpalett som jag genererade på coolors.co
 --mauve: #ffc2fbff;
 --vivid-sky-blue: #4cd5faff;
 --orange-red-crayola: #ff5c5cff;
 --light-yellow: #fdf8d8ff;
 --rosy-brown: #ae8e84ff;
-*/
-*{
+
+{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -27,13 +53,13 @@ html {
 body{
   height: 100%;
   background-image: url("img/los_angeles_natt.jpg");
-  background-color:burlywood; /* ifall min bild inte är tillgänglig*/
+  background-color:burlywood;  ifall min bild inte är tillgänglig
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
 }
-/*grid*/
+grid
 #page {
   display: grid;
   padding: 1rem;
@@ -72,7 +98,7 @@ body{
   grid-area: foot;
   background-color: var(--orange);
 }
-/* boxar */
+ boxar 
 .weatherBox{
   display: flex;
   flex-flow: column;
@@ -80,21 +106,12 @@ body{
   border-radius: 1rem;
   padding: 6.5rem;
 }
+*/
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*FÖRSTA FÖRSÖKET*/
 
 /*
 #container{
