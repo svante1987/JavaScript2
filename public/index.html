@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Väder och Nöjen</title>
     <link rel="stylesheet" href="style.css">
+    <script defer async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtS1sF_Ce5ffRgCu_8V2glaP--ZqHsopA&libraries=places&callback=initMap">
+</script>
     <script defer="true" src="main.js"></script>
 </head>
 <body>
@@ -39,7 +42,8 @@
                         </div>
                     </div>
                     <div class="city-search-cointainer">
-                        <input type="text" class="city-search" placeholder="Enter Location">
+                        <input type="text" class="city-search" data-city-search
+                         placeholder="Enter Location">
                     </div>
                 </div>
                 <h1>The Weather</h1>
