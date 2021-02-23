@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Väder och Nöjen</title>
     <link rel="stylesheet" href="style.css">
-    <script defer async
+    <script defer="true" async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtS1sF_Ce5ffRgCu_8V2glaP--ZqHsopA&libraries=places&callback=initMap">
 </script>
     <script defer="true" src="main.js"></script>
 </head>
 <body>
-    
-    <section id="page">
-        <header>Header</header>
-        <div id="weather">
-            <article class="weatherBox">
+    <div class="container">         
                 <div class="headerWeather">
                     <div class="icon-container">
                         <canvas id="icon" width="100" height="100"></canvas>
@@ -46,15 +42,7 @@
                          placeholder="Enter Location">
                     </div>
                 </div>
-                <h1>The Weather</h1>
-                <p>The weather will be</p>
-            </article>
         </div>
-        <div id="venues">Venues</div>
-        <footer>Footer</footer>
-    </section>
-
-
-
+    </div>
 </body>
 </html>
