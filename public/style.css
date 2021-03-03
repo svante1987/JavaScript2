@@ -1,0 +1,205 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANDRA FÖRSÖKET*/
+
+/* färgpalett som jag genererade på coolors.co
+--mauve: #ffc2fbff;
+--vivid-sky-blue: #4cd5faff;
+--orange-red-crayola: #ff5c5cff;
+--light-yellow: #fdf8d8ff;
+--rosy-brown: #ae8e84ff;
+
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+:root{
+  --purple: #ffc2fbff;
+  --blue: #4cd5faff;
+  --orange: rgb(248, 129, 129);
+  --yellow: #fdf8d8ff;
+  --brown: #ae8e84ff;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  background-image: url("img/los_angeles_natt.jpg");
+  background-color:burlywood;  ifall min bild inte är tillgänglig
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+grid
+#page {
+  display: grid;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  grid-gap: 1rem;
+  grid-template-areas: "head head head head"
+                       "weather weather weather weather"
+                       "venues venues venues venues"
+                       "foot  foot foot foot";
+  grid-template-rows: 60px 250px auto 100px;
+  grid-template-columns: 
+  [col-start] 1fr
+  [col-2] 1fr
+  [col-3] 1fr
+  [col-4] 1fr
+  [col-end];
+}
+
+#page > header {
+  grid-area: head;
+  background-color: var(--orange);
+}
+
+#page > div#weather {
+  grid-area: weather;
+  background-color: var(--orange);
+}
+
+#page > div#venues  {
+  grid-area: venues;
+  background-color: var(--orange);
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: var(--orange);
+}
+ boxar 
+.weatherBox{
+  display: flex;
+  flex-flow: column;
+  border:  1px solid black;
+  border-radius: 1rem;
+  padding: 6.5rem;
+}
+*/
+
+
+
+
+/*FÖRSTA FÖRSÖKET*/
+
+/*
+#container{
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:
+    [col-start] 1fr
+    [col-2] 1fr
+    [col-3] 1fr
+    [col-end];
+  grid-gap: 1rem;
+  grid-template-rows: repeat(3 fr);
+  grid-template-areas: 
+  "f f f"
+  "m m m"
+  "h h h";
+}
+
+/* Items #container > div*/
+/*.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222222;
+  text-align: center;
+  box-shadow: 1px 2px 3px gray;
+  border-radius: 8px;
+  color: #222;
+  font-size: 2em;
+  font-family: arial, sans-serif;
+  background-color: #f9d423;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#container > header {
+  grid-area: h;
+}
+#container > main {
+  grid-area: m;
+}
+#container > nav {
+  grid-area: s;
+}
+#container > footer {
+  grid-area: f;
+}
+
+/*
+  #container {
+  padding: 10px;
+  width:95vw;
+  height:60vh;
+  margin: 0 auto;
+  background-color: transparent;
+  outline: 8px solid rgb(250, 155, 91);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+  grid-auto-rows: 60px auto 100px;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "header header header"
+  "main main sidebar"
+  "footer footer footer";
+  grid-template:
+  "header header header"
+  "main main sidebar"
+  "main main siderbar"
+  "footer footer footer";
+  hur man placerar saker i sina celler 
+  align-items:;  vertikalt i cellerna
+  justify-items: ; horizontellt
+  place-items:;  short hand här kan man göra båda ovanstående 
+   placera saker i den stora kontainern 
+  align-content:;  vertikalt 
+  justify-items:;  horizontellt 
+  place-content:;  shorthand
+}
+*/
+/*
+#container > div {
+  background-color: #ae8e84ff;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+*/
